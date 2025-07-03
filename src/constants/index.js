@@ -16,13 +16,17 @@ import {
   figma,
   docker,
   meta,
-  starbucks,
+  company,
   tesla,
   shopify,
-  carrent,
   jobit,
   tripguide,
   threejs,
+  invent,
+  pamp,
+  karobar,
+  propinspectauto,
+  server
 } from "../assets";
 
 export const navLinks = [
@@ -42,7 +46,7 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer",
+    title: "Full Stack Web Developer",
     icon: web,
   },
   {
@@ -50,11 +54,11 @@ const services = [
     icon: mobile,
   },
   {
-    title: "Backend Developer",
+    title: "Frontend Developer",
     icon: backend,
   },
   {
-    title: "Content Creator",
+    title: "MERN Developer",
     icon: creator,
   },
 ];
@@ -116,50 +120,24 @@ const technologies = [
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
+    title: "Full Stack Developer",
+    company_name: "GoEnterprise",
+    icon: company,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "June 2023 - Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+      "Architect and develop web applications using Next.js and Laravel framework and other related technologies.",
+      "Design and implement RESTful APIs to facilitate communication between frontend and backend systems.",
       "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
-    iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Full stack Developer",
-    company_name: "Meta",
+    title: "Freelance",
+    company_name: "",
     icon: meta,
     iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
+    date: "Oct 2022 - Present",
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -198,16 +176,45 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Cryptofunding for Bitcoin",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "A secure cryptocurrency investment dashboard designed for managing digital assets, tracking performance, and monitoring trading activities with user-friendly login and access control features.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
+        name: "node js",
+        color: "green-text-gradient",
+      },
+      {
+        name: "express js",
+        color: "pink-text-gradient",
+      },
+      {
         name: "mongodb",
+        color: "green-text-gradient",
+      },
+      {
+        name: "chakra ui",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: invent,
+    source_code_link: "https://www.inventonbtc.com/",
+  },
+  {
+    name: "Pulsechain Against Mediocre Politicians",
+    description:
+      "Facilitates direct cryptocurrency donations to support Donald Trump’s 2024 campaign, promoting political transparency and accountability, Created responsive and interactive user interfaces using Mern and Tailwind CSS",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "node js",
         color: "green-text-gradient",
       },
       {
@@ -215,50 +222,62 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: pamp,
+    source_code_link: "https://demo-pamp.netlify.app/",
   },
   {
-    name: "Job IT",
+    name: "Karobar",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "A business management tool tailored for small businesses and retailers, featuring inventory tracking, sales monitoring, and customer management, built for ease of use and mobility.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "node js",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "express js",
         color: "pink-text-gradient",
       },
+      {
+        name: "mongodb",
+        color: "green-text-gradient",
+      },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    image: karobar,
+    source_code_link: "https://karobarwebsite.web.app/",
   },
   {
-    name: "Trip Guide",
+    name: "Pro Inspect Auto",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "An automotive inspection service platform that enables users to schedule vehicle inspections, view detailed reports, and connect with certified inspectors—ensuring transparency and peace of mind in vehicle purchasing.",
     tags: [
       {
-        name: "nextjs",
+        name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "node js",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "express js",
         color: "pink-text-gradient",
       },
+      {
+        name: "mongodb",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "tailwind css",
+        color: "green-text-gradient",
+      },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: propinspectauto,
+    source_code_link: "https://proinspectautos.com/",
   },
 ];
 

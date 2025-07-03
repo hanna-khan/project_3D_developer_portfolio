@@ -3,10 +3,15 @@ import Tilt from "react-tilt";
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
-import { github } from "../assets";
+import { github, server } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
+
+const truncateText = (text, maxLength) => {
+  return text.length > maxLength ? text.slice(0, maxLength) + '...' : text;
+};
+
 
 const ProjectCard = ({
   index,
@@ -24,7 +29,7 @@ const ProjectCard = ({
           scale: 1,
           speed: 450,
         }}
-        className='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full'
+        className='bg-tertiary p-5 rounded-2xl sm:w-[560px] w-full'
       >
         <div className='relative w-full h-[230px]'>
           <img
@@ -38,18 +43,24 @@ const ProjectCard = ({
               onClick={() => window.open(source_code_link, "_blank")}
               className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
             >
-              <img
-                src={github}
+              🔗
+              {/* <img
+                src={server}
                 alt='source code'
                 className='w-1/2 h-1/2 object-contain'
-              />
+              /> */}
             </div>
           </div>
         </div>
 
         <div className='mt-5'>
-          <h3 className='text-white font-bold text-[24px]'>{name}</h3>
-          <p className='mt-2 text-secondary text-[14px]'>{description}</p>
+          <h3 className='text-white font-bold text-[24px]'>
+            {name}
+          </h3>
+          <p className='mt-2 text-secondary text-[14px]'>
+            {truncateText(description, 200)}
+          </p>
+
         </div>
 
         <div className='mt-4 flex flex-wrap gap-2'>
