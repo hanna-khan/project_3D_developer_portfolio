@@ -21,6 +21,11 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
+import laravel from "./tech/Laravel.png";
+import php from "./tech/PHP.png";
+import mysql from "./tech/MySQL.png";
+import vue from "./tech/Vue.js.png";
+import linux from "./tech/Linux.png";
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
@@ -67,5 +72,10 @@ export {
   pamp,
   karobar,
   propinspectauto,
-  server
+  server,
+  linux,
+  vue,
+  mysql,
+  php,
+  laravel
 };

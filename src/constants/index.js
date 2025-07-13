@@ -26,7 +26,12 @@ import {
   pamp,
   karobar,
   propinspectauto,
-  server
+  server,
+  linux,
+  vue,
+  mysql,
+  php,
+  laravel
 } from "../assets";
 
 export const navLinks = [
@@ -65,10 +70,6 @@ const services = [
 
 const technologies = [
   {
-    name: "HTML 5",
-    icon: html,
-  },
-  {
     name: "CSS 3",
     icon: css,
   },
@@ -85,6 +86,10 @@ const technologies = [
     icon: reactjs,
   },
   {
+    name: "Vue JS",
+    icon: vue,
+  },
+  {
     name: "Redux Toolkit",
     icon: redux,
   },
@@ -97,24 +102,28 @@ const technologies = [
     icon: nodejs,
   },
   {
+    name: "Laravel",
+    icon: laravel,
+  },
+  {
+    name: "PHP",
+    icon: php,
+  },
+  {
     name: "MongoDB",
     icon: mongodb,
   },
   {
-    name: "Three JS",
-    icon: threejs,
+    name: "MySQL",
+    icon: mysql,
   },
   {
     name: "git",
     icon: git,
   },
   {
-    name: "figma",
-    icon: figma,
-  },
-  {
-    name: "docker",
-    icon: docker,
+    name: "Linux",
+    icon: linux,
   },
 ];
 
@@ -126,10 +135,11 @@ const experiences = [
     iconBg: "#383E56",
     date: "June 2023 - Present",
     points: [
-      "Architect and develop web applications using Next.js and Laravel framework and other related technologies.",
+      "Architect and develop web application using Next.js and Laravel framework and other related technologies.",
+      "Build and maintain mobile application using React Native for seamless cross-platform experiences",
       "Design and implement RESTful APIs to facilitate communication between frontend and backend systems.",
       "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+      "Collaborate with cross-functional teams to gather requirements and translate them into technical specifications to create high-quality products.",
     ],
   },
   {
@@ -140,9 +150,8 @@ const experiences = [
     date: "Oct 2022 - Present",
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Created responsive, mobile-friendly UIs with modern styling tools.",
+      "Worked with designers and developers to deliver quality features.",
     ],
   },
 ];

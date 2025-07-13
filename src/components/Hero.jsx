@@ -19,13 +19,15 @@ const Hero = () => {
             Hi, I'm <span className='text-[#915EFF]'>Hania</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            I develop user interfaces<br className='sm:block hidden' />
-             and web applications
+            I build fast, modern  <br className='sm:block hidden' />
+            web and mobile applications.
+
+
           </p>
         </div>
       </div>
 
-      <ComputersCanvas />
+      {/* <ComputersCanvas /> */}
 
       <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>
         <a href='#about'>
