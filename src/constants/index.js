@@ -70,6 +70,10 @@ const services = [
 
 const technologies = [
   {
+    name: "HTML",
+    icon: html,
+  },
+  {
     name: "CSS 3",
     icon: css,
   },
